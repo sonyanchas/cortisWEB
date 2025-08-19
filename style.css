@@ -8,7 +8,6 @@ body {
   background-color: lightblue;
   color: white;
 }
-/* write css code here */
 h1 {
    font-family: Game Paused Demo, sans-serif;
    font-size: 60px;
@@ -47,6 +46,43 @@ nav a:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.flex-container img {
+  aspect-ratio: 1 / 1;  
+  filter: grayscale(100%);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;  
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+.flex-container img:hover {
+  filter: grayscale(0%);
+    transform: scale(1.05);
+}
+.flex-container img:active {
+    transform: scale(0.95);
+}
+.flex-container img:focus {
+    outline: 2px solid #ffcc00;
+    outline-offset: 4px;
+}
+.flex-container img:focus-visible {
+    outline: 2px solid #ffcc00;
+    outline-offset: 4px;
+}
+.circle-wrapper {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 35vh;         
 }
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Press+Start+2P&display=swap');
         
