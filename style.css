@@ -170,25 +170,25 @@ body {
 
 .navbar-container {
     position: relative;
-    padding: 30px 0px; /* Change from 30px 20px to remove side padding */
+    padding: 0px 0px; /* Change from 30px 20px to remove side padding */
     margin: 0 auto;
-    max-width: none; /* Remove the 1000px limit, or delete this line entirely */
+    /* max-width: none; /* Remove the 1000px limit, or delete this line entirely */
     width: 100%; /* Add this to ensure full width */
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(70, 176, 228, 0.15);
     backdrop-filter: blur(20px);
-    border-radius: 0px; /* Change from 30px to 0px for sharp corners, or use 10px for slight rounding */
+    border-radius: 10px; /* Change from 30px to 0px for sharp corners, or use 10px for slight rounding */
     padding: 20px 40px;
     box-shadow: 
-        0 8px 40px rgba(255, 182, 193, 0.3),
-        inset 0 2px 0 rgba(255, 255, 255, 0.4),
-        inset 0 -2px 0 rgba(255, 255, 255, 0.2),
-        0 0 0 1px rgba(255, 255, 255, 0.2);
+        0 8px 40px #6cceea4d,
+        inset 0 2px 0 #5b9eb566,
+        inset 0 -2px 0 #41b7d733,
+        0 0 0 1px #2bd3d633;
     position: relative;
     overflow: hidden;
-    border: 2px solid transparent;
+    border: 5px solid transparent #90caf9;
     background-clip: padding-box;
     width: 100%; /* Add this to ensure the navbar itself is full width */
 }
@@ -200,30 +200,28 @@ body {
     left: -3px;
     right: -3px;
     bottom: -3px;
-    background: linear-gradient(45deg, 
-        #15378e, #2d46e9, #2815d4, #1948e2, 
-        #070bd5, #1948d7, #1338b3, #155fe8);
+    background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 25%, #bbdefb 50%, #90caf9 75%, #64b5f6 100%);
     background-size: 400% 400%;
     border-radius: 0px; /* Change from 33px to 0px to match the navbar border-radius */
     z-index: -1;
-    animation: holographicBorder 8s ease infinite;
+   /* animation: holographicBorder 8s ease infinite; */
     filter: blur(1px);
 }
         
 
-        @keyframes holographicBorder {
+       /* @keyframes holographicBorder {
             0%, 100% { background-position: 0% 50%; }
             25% { background-position: 100% 0%; }
             50% { background-position: 100% 100%; }
             75% { background-position: 0% 100%; }
-        }
+        }*/
 
         .nav-list {
             list-style: none;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 15px;
+            gap: 20px;
             flex-wrap: wrap;
         }
 
@@ -233,7 +231,7 @@ body {
 
         .nav-link {
             text-decoration: none;
-            color: #4a4a4a;
+            color: #103542;
             font-weight: 700;
             font-size: 14px;
             padding: 15px 25px;
@@ -246,8 +244,8 @@ body {
             overflow: hidden;
             text-transform: lowercase;
             letter-spacing: 1px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(247, 245, 245, 0.1);
+            border: 1px solid #90caf9;
         }
 
         .nav-link::before {
@@ -259,7 +257,7 @@ body {
             height: 100%;
             background: linear-gradient(90deg, 
                 transparent, 
-                rgba(255, 255, 255, 0.6), 
+                #90caf9, 
                 transparent);
             transition: left 0.8s ease;
         }
@@ -270,15 +268,15 @@ body {
 
         .nav-link:hover {
             background: linear-gradient(135deg, 
-                #0957f1cc, 
-                rgba(3, 84, 245, 0.8), 
-                rgba(11, 3, 244, 0.8));
+                #90caf9, 
+                #045ea7,
+                #1199ed,);
             color: #2d2d2d;
             transform: translateY(-3px) scale(1.05);
             box-shadow: 
-                0 15px 35px rgba(251, 182, 255, 0.4),
-                0 5px 15px rgba(255, 255, 255, 0.3);
-            border-color: rgba(255, 255, 255, 0.6);
+                0 15px 35px rgba(68, 149, 241, 0.4),
+                0 5px 15px rgba(41, 153, 233, 0.3);
+            border-color: #90caf9;
         }
 
         .nav-emoji {
@@ -291,7 +289,7 @@ body {
         @keyframes magicalFloat {
             0%, 100% { 
                 transform: translateY(0) rotate(0deg);
-                filter: drop-shadow(0 0 4px rgba(100, 181, 246, 0.6));
+                filter: drop-shadow(0 0 4px rgba(100, 123, 142, 0.6));
             }
             25% { 
                 transform: translateY(-2px) rotate(5deg);
@@ -325,7 +323,7 @@ body {
             position: absolute;
             width: 8px;
             height: 8px;
-            background: white;
+            background: #90caf9;
             clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
             animation: pixelTwinkle 4s ease-in-out infinite;
             filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
