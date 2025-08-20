@@ -115,6 +115,39 @@ body {
     color: #333;
     margin-top: 0;   /* remove default browser margin */
 }
+.mv-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* full viewport height */
+}
+.mvheading-container {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.mvheading-container h1 {
+    font-family: "Game Paused Demo", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.4rem;
+    margin-bottom: 0px;
+}
+.mvheading-container a {
+    text-decoration: none;       /* removes underline */
+    color: #ffffff;              /* custom text color */
+    font-weight: bold;           /* bold text */
+    font-size: 1.1rem;           /* adjust size */
+    background-color: #6a8697;   /* optional background */
+    padding: 2px 12px;           /* some padding */
+    border-radius: 8px;          /* rounded corners */
+    transition: 0.3s ease;       /* smooth hover transition */
+}
+.mvheading-container a:hover {
+    background-color: #8d2f18;   /* hover background */
+    color: #fff;                 /* hover text color */
+    transform: scale(1.05);      /* optional slight zoom effect */
+}
 
 /*NAV BAR STYLES*/
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Press+Start+2P&display=swap');
