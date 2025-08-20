@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+<script src="script.js"></script>
 <body>
     <div class="navbar-container">
     <nav class="navbar">
@@ -53,12 +54,46 @@
 </div>
     <div class="circle-wrapper"></div>
         <div class="flex-container">
-            <img src="photos/martinie.jpeg" alt="Martin" width="300">
-             <img src="photos/james.jpeg" alt="James" width="300">
-              <img src="photos/juhoonie.jpeg" alt="Juhoon" width="300">
-               <img src="photos/seonghyeon.jpeg" alt="Seonghyon" width="300">
-                <img src="photos/keonho.jpeg" alt="Keonho" width="300">
+            <img src="photos/martinie.jpeg" alt="Martin" width="300"  onclick="openPopup('martinPopup')" style="cursor: pointer; position: relative;">
+             <img src="photos/james.jpeg" alt="James" width="300"  onclick="openPopup('jamesPopup')" style="cursor: pointer; position: relative;">
+              <img src="photos/juhoonie.jpeg" alt="Juhoon" width="300"  onclick="openPopup('juhoonPopup')" style="cursor: pointer; position: relative;">
+               <img src="photos/seonghyeon.jpeg" alt="Seonghyeon" width="300" onclick="openPopup('seonghyeonPopup')" style="cursor: pointer; position: relative;">
+                <img src="photos/keonho.jpeg" alt="Keonho" width="300" onclick="openPopup('keonhoPopup')" style="cursor: pointer; position: relative;">
         </div>
-    </div>
+        <div class="popup-overlay" id="martinPopup">
+            <div class="popup-content">
+            <h2>Martin</h2>
+            <img src="photos/martinie.jpeg" alt="Martin" width="300" style="width: 100px; border-radius: 15px; margin-bottom: 20px">
+            <p> Martin is the</p>
+        </div>
+        </div>
+        <div class="popup-overlay" id="jamesPopup">
+            <div class="popup-content">
+            <h2>James</h2>
+            <img src="photos/james.jpeg" alt="James" width="300" style="width: 100px; border-radius: 15px; margin-bottom: 20px">
+            <p></p>
+        </div>
+        </div>
+        <div class="popup-overlay" id="juhoonPopup">
+            <div class="popup-content">
+            <h2>Juhoon</h2>
+            <img src="photos/juhoonie.jpeg" alt="Juhoon" width="300" style="width: 100px; border-radius: 15px; margin-bottom: 20px">
+            <p></p>
+        </div>
+        </div>
+        <div class="popup-overlay" id="seonghyeonPopup">
+            <div class="popup-content">
+            <h2>Seonghyeon</h2>
+            <img src="photos/seonghyeon.jpeg" alt="Seonghyeon" width="300" style="width: 100px; border-radius: 15px; margin-bottom: 20px">
+            <p></p>
+        </div>  
+        </div>
+        <div class="popup-overlay" id="keonhoPopup">
+            <div class="popup-content">
+            <h2>Keonho</h2>
+            <img src="photos/keonho.jpeg" alt="Keonho" width="300" style="width: 100px; border-radius: 15px; margin-bottom: 20px">
+            <p></p>
+        </div>
+        </div>
 </body>
 </html>
